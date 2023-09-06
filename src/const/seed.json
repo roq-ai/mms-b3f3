@@ -1,0 +1,2422 @@
+[
+  {
+    "delivery_note": [
+      {
+        "id": "fd623948-dc03-4338-bac3-887e894695db",
+        "note_number": "DN001",
+        "issuer": "John Doe",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-06T03:23:45.425Z",
+        "updated_at": "2023-09-06T03:52:30.275Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "151a05f5-fe24-4c15-9da4-63985d024f83",
+        "note_number": "DN002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Enterprises",
+        "created_at": "2023-09-06T13:38:55.810Z",
+        "updated_at": "2023-09-06T11:04:23.625Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4",
+        "note_number": "DN003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Industries",
+        "created_at": "2023-09-05T19:59:33.984Z",
+        "updated_at": "2023-09-05T18:10:32.013Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0cd01350-f3c0-44a8-b3e8-b13a86e10d00",
+        "note_number": "DN004",
+        "issuer": "Sarah Jones",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-06T17:11:56.109Z",
+        "updated_at": "2023-09-06T05:37:41.166Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "20652059-b951-4bb9-b2f4-c0936734be5a",
+        "note_number": "DN005",
+        "issuer": "Robert Wilson",
+        "addressee": "BestCo Ltd",
+        "created_at": "2023-09-06T17:39:08.968Z",
+        "updated_at": "2023-09-05T20:38:45.423Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "f8a153dd-dd4c-47ec-9741-ed19fcc99333",
+        "invalidated_at": "2023-09-05T18:21:38.813Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T01:44:35.976Z",
+        "updated_at": "2023-09-05T19:36:41.007Z",
+        "delivery_note_id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4"
+      },
+      {
+        "id": "b76fb4b4-fa07-46ec-b94e-25f100f14f83",
+        "invalidated_at": "2023-09-06T15:48:53.666Z",
+        "reason": "Incorrect address",
+        "created_at": "2023-09-05T20:03:32.371Z",
+        "updated_at": "2023-09-06T14:10:21.951Z",
+        "delivery_note_id": "151a05f5-fe24-4c15-9da4-63985d024f83"
+      },
+      {
+        "id": "5126febf-950a-409a-9b90-206b4bfc6c5d",
+        "invalidated_at": "2023-09-06T08:36:46.420Z",
+        "reason": "Wrong recipient",
+        "created_at": "2023-09-06T09:24:24.983Z",
+        "updated_at": "2023-09-05T20:09:49.442Z",
+        "delivery_note_id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4"
+      },
+      {
+        "id": "e9d9dbd8-95d4-4c86-a414-d148db689aef",
+        "invalidated_at": "2023-09-06T04:01:46.350Z",
+        "reason": "Damaged package",
+        "created_at": "2023-09-06T00:30:10.788Z",
+        "updated_at": "2023-09-06T06:07:49.291Z",
+        "delivery_note_id": "0cd01350-f3c0-44a8-b3e8-b13a86e10d00"
+      },
+      {
+        "id": "b8acb5e6-56a3-40d6-b131-b61508ebcd8e",
+        "invalidated_at": "2023-09-06T12:56:39.185Z",
+        "reason": "Incomplete information",
+        "created_at": "2023-09-06T10:56:32.808Z",
+        "updated_at": "2023-09-06T13:41:29.241Z",
+        "delivery_note_id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "416a8c13-bede-4780-ae37-5a86933d1fe6",
+        "file_name": "data1.xlsx",
+        "imported_at": "2023-09-05T19:55:35.067Z",
+        "item_limit": 75794,
+        "created_at": "2023-09-06T00:43:17.201Z",
+        "updated_at": "2023-09-06T16:42:14.901Z",
+        "delivery_note_id": "151a05f5-fe24-4c15-9da4-63985d024f83"
+      },
+      {
+        "id": "72749bfb-a563-454b-ac66-6590663de380",
+        "file_name": "data2.xlsx",
+        "imported_at": "2023-09-06T13:30:25.579Z",
+        "item_limit": 65437,
+        "created_at": "2023-09-06T13:53:31.418Z",
+        "updated_at": "2023-09-06T11:52:00.900Z",
+        "delivery_note_id": "0cd01350-f3c0-44a8-b3e8-b13a86e10d00"
+      },
+      {
+        "id": "965133be-1d0b-453f-a82a-38d06ce55de8",
+        "file_name": "data3.xlsx",
+        "imported_at": "2023-09-06T03:43:51.973Z",
+        "item_limit": 15003,
+        "created_at": "2023-09-05T20:14:43.445Z",
+        "updated_at": "2023-09-06T02:00:19.496Z",
+        "delivery_note_id": "fd623948-dc03-4338-bac3-887e894695db"
+      },
+      {
+        "id": "c81da397-ef83-4a8a-bad2-8e7bb835cc0c",
+        "file_name": "data4.xlsx",
+        "imported_at": "2023-09-06T16:10:02.065Z",
+        "item_limit": 79527,
+        "created_at": "2023-09-06T14:33:07.649Z",
+        "updated_at": "2023-09-06T13:30:39.102Z",
+        "delivery_note_id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4"
+      },
+      {
+        "id": "7c37a271-7651-4e78-a0e0-00f475320ae3",
+        "file_name": "data5.xlsx",
+        "imported_at": "2023-09-06T05:48:53.724Z",
+        "item_limit": 54787,
+        "created_at": "2023-09-06T10:34:27.853Z",
+        "updated_at": "2023-09-06T07:41:18.802Z",
+        "delivery_note_id": "151a05f5-fe24-4c15-9da4-63985d024f83"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "e33d33e0-706f-4c5d-a879-63296a4da63c",
+        "name": "Product A",
+        "quantity": 93234,
+        "price": 80911,
+        "weight": 1768,
+        "deadline": "2023-09-06T17:26:10.822Z",
+        "created_at": "2023-09-06T16:23:35.265Z",
+        "updated_at": "2023-09-06T00:51:51.417Z",
+        "delivery_note_id": "20652059-b951-4bb9-b2f4-c0936734be5a"
+      },
+      {
+        "id": "e3b0d0f5-a73e-4a40-b88a-2e537c7e5e83",
+        "name": "Product B",
+        "quantity": 81044,
+        "price": 85712,
+        "weight": 11023,
+        "deadline": "2023-09-06T02:45:51.968Z",
+        "created_at": "2023-09-06T08:40:17.054Z",
+        "updated_at": "2023-09-05T19:37:05.284Z",
+        "delivery_note_id": "0cd01350-f3c0-44a8-b3e8-b13a86e10d00"
+      },
+      {
+        "id": "06adbcfb-a02c-48bb-8b1a-e6cd5252098d",
+        "name": "Product C",
+        "quantity": 18674,
+        "price": 81117,
+        "weight": 48901,
+        "deadline": "2023-09-05T20:58:49.188Z",
+        "created_at": "2023-09-05T20:22:17.848Z",
+        "updated_at": "2023-09-06T00:32:33.175Z",
+        "delivery_note_id": "20652059-b951-4bb9-b2f4-c0936734be5a"
+      },
+      {
+        "id": "28d18c26-5d13-415c-bdec-59ec043c7a7d",
+        "name": "Product D",
+        "quantity": 77756,
+        "price": 62192,
+        "weight": 77257,
+        "deadline": "2023-09-06T12:13:12.624Z",
+        "created_at": "2023-09-06T15:23:54.919Z",
+        "updated_at": "2023-09-06T03:47:28.434Z",
+        "delivery_note_id": "cf95ee2e-d9e8-4cb3-b637-8c53b79341d4"
+      },
+      {
+        "id": "4b6b1163-dca2-4fce-89b4-52824520dc99",
+        "name": "Product E",
+        "quantity": 60485,
+        "price": 9681,
+        "weight": 22698,
+        "deadline": "2023-09-05T21:08:37.765Z",
+        "created_at": "2023-09-05T22:38:40.886Z",
+        "updated_at": "2023-09-06T06:05:28.822Z",
+        "delivery_note_id": "151a05f5-fe24-4c15-9da4-63985d024f83"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "bdb49015-a6bc-4434-a346-f2a5db95a3d6",
+        "email": "Petra.Jerde@gmail.com",
+        "firstName": "Reece",
+        "lastName": "Koch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/73.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "846c5f2e-8efb-48bb-83f7-01c4cf522ba0",
+        "email": "Sandrine.Schmitt91@yahoo.com",
+        "firstName": "Salma",
+        "lastName": "Hagenes-Hudson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/977.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "68a07fbf-dc0f-4753-a044-4ccfe421f64e",
+        "email": "General_Reichert16@hotmail.com",
+        "firstName": "Oda",
+        "lastName": "Johnson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/64576913",
+        "tenantId": null
+      },
+      {
+        "reference": "073c1670-1fc5-41e4-9f73-93fea7d1c36b",
+        "email": "Sienna.Rogahn43@yahoo.com",
+        "firstName": "Ralph",
+        "lastName": "Hahn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4767984",
+        "tenantId": null
+      },
+      {
+        "reference": "c96b781c-0326-4e57-a2bf-c1091b0bb6c9",
+        "email": "Anastasia.Kuphal@gmail.com",
+        "firstName": "Rickey",
+        "lastName": "Goyette",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/90890244",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "ecf45b20-8d2c-49d9-9f3d-4fdc293be764",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Company",
+        "created_at": "2023-09-05T20:58:20.668Z",
+        "updated_at": "2023-09-05T22:07:02.171Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2e2fdd77-8271-4323-92b0-93c8f5908a60",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Corporation",
+        "created_at": "2023-09-06T14:35:57.970Z",
+        "updated_at": "2023-09-05T19:27:38.879Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "23007b5e-28f4-433e-a96b-f6ed5c06595f",
+        "note_number": "DN-003",
+        "issuer": "Michael Johnson",
+        "addressee": "123 Enterprises",
+        "created_at": "2023-09-06T12:40:52.228Z",
+        "updated_at": "2023-09-06T05:35:37.430Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c4327745-c0fc-4bd4-95af-6c434d5f8668",
+        "note_number": "DN-004",
+        "issuer": "Emily Brown",
+        "addressee": "Acme Inc.",
+        "created_at": "2023-09-06T16:15:00.003Z",
+        "updated_at": "2023-09-06T04:43:45.359Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "20fa90ef-d915-416e-865f-ab32aa66fe00",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-06T10:08:14.055Z",
+        "updated_at": "2023-09-06T07:16:46.212Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "704f85b2-9a0f-4505-8771-3b2cdb3c8878",
+        "invalidated_at": "2023-09-06T13:48:59.220Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T13:10:26.789Z",
+        "updated_at": "2023-09-05T21:57:31.027Z",
+        "delivery_note_id": "2e2fdd77-8271-4323-92b0-93c8f5908a60"
+      },
+      {
+        "id": "1d542272-57d4-46f1-b57c-d612e806babd",
+        "invalidated_at": "2023-09-06T15:53:13.509Z",
+        "reason": "Incorrect address",
+        "created_at": "2023-09-05T22:21:53.582Z",
+        "updated_at": "2023-09-06T07:21:57.850Z",
+        "delivery_note_id": "2e2fdd77-8271-4323-92b0-93c8f5908a60"
+      },
+      {
+        "id": "b33fe918-22be-4c32-bae9-9311d9eca392",
+        "invalidated_at": "2023-09-06T17:14:29.266Z",
+        "reason": "Damaged package",
+        "created_at": "2023-09-06T15:32:41.244Z",
+        "updated_at": "2023-09-06T02:47:46.418Z",
+        "delivery_note_id": "2e2fdd77-8271-4323-92b0-93c8f5908a60"
+      },
+      {
+        "id": "a3c6a188-79d2-4923-8a2a-5a468d330dfc",
+        "invalidated_at": "2023-09-06T12:00:50.333Z",
+        "reason": "Wrong recipient",
+        "created_at": "2023-09-06T08:12:34.619Z",
+        "updated_at": "2023-09-06T05:49:44.046Z",
+        "delivery_note_id": "20fa90ef-d915-416e-865f-ab32aa66fe00"
+      },
+      {
+        "id": "5aabfb99-8d02-4c10-b311-d8fa71df575f",
+        "invalidated_at": "2023-09-06T12:51:56.702Z",
+        "reason": "Incomplete information",
+        "created_at": "2023-09-06T06:16:08.713Z",
+        "updated_at": "2023-09-06T02:14:31.317Z",
+        "delivery_note_id": "20fa90ef-d915-416e-865f-ab32aa66fe00"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "115aa909-0abf-454f-805f-ea655ba046d5",
+        "file_name": "data1.xlsx",
+        "imported_at": "2023-09-06T06:10:15.859Z",
+        "item_limit": 80798,
+        "created_at": "2023-09-06T11:24:44.650Z",
+        "updated_at": "2023-09-06T04:35:38.095Z",
+        "delivery_note_id": "23007b5e-28f4-433e-a96b-f6ed5c06595f"
+      },
+      {
+        "id": "d5e70579-8520-4395-98f0-58209b6f90a6",
+        "file_name": "data2.xlsx",
+        "imported_at": "2023-09-06T08:09:05.553Z",
+        "item_limit": 58586,
+        "created_at": "2023-09-05T23:48:12.736Z",
+        "updated_at": "2023-09-06T08:23:06.131Z",
+        "delivery_note_id": "2e2fdd77-8271-4323-92b0-93c8f5908a60"
+      },
+      {
+        "id": "f17b5903-70f3-4897-b6f8-7674a46164fa",
+        "file_name": "data3.xlsx",
+        "imported_at": "2023-09-05T22:06:22.387Z",
+        "item_limit": 71468,
+        "created_at": "2023-09-05T23:37:51.732Z",
+        "updated_at": "2023-09-05T18:32:55.890Z",
+        "delivery_note_id": "ecf45b20-8d2c-49d9-9f3d-4fdc293be764"
+      },
+      {
+        "id": "49444369-fe9f-4d27-88bc-399ff70f5c70",
+        "file_name": "data4.xlsx",
+        "imported_at": "2023-09-05T19:10:08.880Z",
+        "item_limit": 81156,
+        "created_at": "2023-09-06T11:42:42.873Z",
+        "updated_at": "2023-09-06T09:37:41.333Z",
+        "delivery_note_id": "c4327745-c0fc-4bd4-95af-6c434d5f8668"
+      },
+      {
+        "id": "5a4a5646-f866-48ff-ae6c-0376030692c8",
+        "file_name": "data5.xlsx",
+        "imported_at": "2023-09-06T13:52:16.057Z",
+        "item_limit": 51870,
+        "created_at": "2023-09-05T22:23:48.298Z",
+        "updated_at": "2023-09-05T23:19:45.717Z",
+        "delivery_note_id": "ecf45b20-8d2c-49d9-9f3d-4fdc293be764"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "1f910f73-c01c-4dae-8e0a-52dc5fb89502",
+        "name": "Product A",
+        "quantity": 73476,
+        "price": 46027,
+        "weight": 23067,
+        "deadline": "2023-09-06T00:05:22.149Z",
+        "created_at": "2023-09-06T07:35:14.855Z",
+        "updated_at": "2023-09-06T00:01:06.727Z",
+        "delivery_note_id": "c4327745-c0fc-4bd4-95af-6c434d5f8668"
+      },
+      {
+        "id": "4d0dfff7-d5d9-416b-91e0-51260e5a8fdc",
+        "name": "Product B",
+        "quantity": 34637,
+        "price": 60240,
+        "weight": 48108,
+        "deadline": "2023-09-06T03:49:30.611Z",
+        "created_at": "2023-09-06T05:47:34.367Z",
+        "updated_at": "2023-09-06T00:34:54.888Z",
+        "delivery_note_id": "c4327745-c0fc-4bd4-95af-6c434d5f8668"
+      },
+      {
+        "id": "a6bf45a4-b8b5-4bb3-886f-951edf1b4fdc",
+        "name": "Product C",
+        "quantity": 6115,
+        "price": 83402,
+        "weight": 23158,
+        "deadline": "2023-09-05T21:58:49.103Z",
+        "created_at": "2023-09-05T21:25:15.188Z",
+        "updated_at": "2023-09-06T03:27:55.271Z",
+        "delivery_note_id": "2e2fdd77-8271-4323-92b0-93c8f5908a60"
+      },
+      {
+        "id": "831660c1-a8f6-473b-bcfc-04e2252bd4c6",
+        "name": "Product D",
+        "quantity": 51775,
+        "price": 35571,
+        "weight": 80396,
+        "deadline": "2023-09-06T03:04:03.036Z",
+        "created_at": "2023-09-05T21:04:40.774Z",
+        "updated_at": "2023-09-06T04:32:47.906Z",
+        "delivery_note_id": "23007b5e-28f4-433e-a96b-f6ed5c06595f"
+      },
+      {
+        "id": "74e4a8a5-8100-47f0-8d90-1def9fab462e",
+        "name": "Product E",
+        "quantity": 49754,
+        "price": 82846,
+        "weight": 3026,
+        "deadline": "2023-09-06T00:18:25.635Z",
+        "created_at": "2023-09-06T01:44:53.084Z",
+        "updated_at": "2023-09-06T10:24:28.185Z",
+        "delivery_note_id": "20fa90ef-d915-416e-865f-ab32aa66fe00"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "fdfa810f-31d9-4d07-87ff-72eb859bbdd4",
+        "email": "Sigrid0@hotmail.com",
+        "firstName": "Darlene",
+        "lastName": "Howe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/784.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c542bc90-d8e4-430f-a848-fb87bc2aa224",
+        "email": "Erin_Quitzon@hotmail.com",
+        "firstName": "Christophe",
+        "lastName": "Bednar",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/852.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "30e217ba-f1c7-4aaf-8d38-5a90cd46861a",
+        "email": "Stacy.Murray@yahoo.com",
+        "firstName": "Coy",
+        "lastName": "Monahan",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97918973",
+        "tenantId": null
+      },
+      {
+        "reference": "7fc195b5-0c70-46e6-adf7-85c69bc8ab87",
+        "email": "Guy.Bahringer@gmail.com",
+        "firstName": "Berenice",
+        "lastName": "Kuhn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33518190",
+        "tenantId": null
+      },
+      {
+        "reference": "1b774524-f5de-41b2-bc8b-18c1bd6f3dfd",
+        "email": "Vada_Hand21@gmail.com",
+        "firstName": "Joseph",
+        "lastName": "Jacobi",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98579421",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "bff92005-fe33-4501-bcc6-39e97ff42f7f",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-05T21:55:36.398Z",
+        "updated_at": "2023-09-06T10:57:08.606Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d1313213-fadb-4c01-857d-127c9fec038b",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Ltd",
+        "created_at": "2023-09-06T14:25:55.769Z",
+        "updated_at": "2023-09-06T05:28:47.638Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "2f5b073a-e741-4e74-802d-cb67a7150b10",
+        "note_number": "DN-003",
+        "issuer": "Mike Johnson",
+        "addressee": "Acme Inc",
+        "created_at": "2023-09-06T02:04:47.611Z",
+        "updated_at": "2023-09-05T23:53:24.179Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d515c997-bc77-4d8d-829b-30db2f848fcf",
+        "note_number": "DN-004",
+        "issuer": "Sarah Brown",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-05T19:07:40.960Z",
+        "updated_at": "2023-09-05T18:49:25.182Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "92e28da0-7795-4fd9-999c-5844c6b3e15c",
+        "note_number": "DN-005",
+        "issuer": "David Jones",
+        "addressee": "Sunrise Enterprises",
+        "created_at": "2023-09-06T08:32:46.699Z",
+        "updated_at": "2023-09-06T15:20:20.378Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "337cf06b-3b34-4a93-819d-6e89b6039e6b",
+        "invalidated_at": "2023-09-06T05:17:15.486Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T09:11:42.183Z",
+        "updated_at": "2023-09-06T06:48:20.646Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      },
+      {
+        "id": "36520be6-1cc1-4411-8de7-c4cdd06d8e1c",
+        "invalidated_at": "2023-09-06T16:14:43.946Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T06:21:30.981Z",
+        "updated_at": "2023-09-06T17:47:49.055Z",
+        "delivery_note_id": "92e28da0-7795-4fd9-999c-5844c6b3e15c"
+      },
+      {
+        "id": "c59df9c7-afda-42f0-a7d9-623459b09a66",
+        "invalidated_at": "2023-09-05T18:01:47.715Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T13:51:44.902Z",
+        "updated_at": "2023-09-05T19:38:28.043Z",
+        "delivery_note_id": "92e28da0-7795-4fd9-999c-5844c6b3e15c"
+      },
+      {
+        "id": "d65058e7-9d44-40b7-86ff-73249a929536",
+        "invalidated_at": "2023-09-06T13:10:49.786Z",
+        "reason": "Damaged packaging",
+        "created_at": "2023-09-06T08:11:04.176Z",
+        "updated_at": "2023-09-06T05:31:26.297Z",
+        "delivery_note_id": "bff92005-fe33-4501-bcc6-39e97ff42f7f"
+      },
+      {
+        "id": "47deaf0a-8c8c-4f8f-82c3-5ab42fe05ab5",
+        "invalidated_at": "2023-09-06T09:37:20.837Z",
+        "reason": "Wrong recipient",
+        "created_at": "2023-09-06T06:01:45.054Z",
+        "updated_at": "2023-09-05T20:46:16.499Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "7fcdcfc9-7e86-42ef-baf6-f70640a2e378",
+        "file_name": "import_file_1.xlsx",
+        "imported_at": "2023-09-06T01:43:04.138Z",
+        "item_limit": 58071,
+        "created_at": "2023-09-06T00:38:18.758Z",
+        "updated_at": "2023-09-05T21:58:57.647Z",
+        "delivery_note_id": "2f5b073a-e741-4e74-802d-cb67a7150b10"
+      },
+      {
+        "id": "80385b96-a376-4ec4-a494-6d7a18f3e285",
+        "file_name": "import_file_2.xlsx",
+        "imported_at": "2023-09-06T00:44:34.625Z",
+        "item_limit": 54609,
+        "created_at": "2023-09-06T08:34:19.558Z",
+        "updated_at": "2023-09-05T19:47:15.280Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      },
+      {
+        "id": "fff4aceb-43e1-4005-a172-b8c8be515085",
+        "file_name": "import_file_3.xlsx",
+        "imported_at": "2023-09-06T01:01:46.343Z",
+        "item_limit": 76169,
+        "created_at": "2023-09-06T06:41:23.312Z",
+        "updated_at": "2023-09-06T06:38:44.651Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      },
+      {
+        "id": "ec0a9131-6f8b-419d-85c1-4054b505e6cf",
+        "file_name": "import_file_4.xlsx",
+        "imported_at": "2023-09-06T07:41:34.945Z",
+        "item_limit": 87727,
+        "created_at": "2023-09-06T02:57:01.967Z",
+        "updated_at": "2023-09-05T19:53:59.893Z",
+        "delivery_note_id": "d1313213-fadb-4c01-857d-127c9fec038b"
+      },
+      {
+        "id": "f77c69ee-e6e3-44b7-b0b9-ff300b7637af",
+        "file_name": "import_file_5.xlsx",
+        "imported_at": "2023-09-05T19:35:23.164Z",
+        "item_limit": 53887,
+        "created_at": "2023-09-06T07:46:01.215Z",
+        "updated_at": "2023-09-05T19:09:27.367Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "ce21b2c1-9bdd-45df-b5fb-5e02a9a2e037",
+        "name": "Product A",
+        "quantity": 2724,
+        "price": 1811,
+        "weight": 46786,
+        "deadline": "2023-09-06T12:12:09.020Z",
+        "created_at": "2023-09-06T00:16:00.171Z",
+        "updated_at": "2023-09-06T09:53:43.253Z",
+        "delivery_note_id": "2f5b073a-e741-4e74-802d-cb67a7150b10"
+      },
+      {
+        "id": "f5ac24a7-9724-4d3b-b967-856ef4820347",
+        "name": "Product B",
+        "quantity": 54140,
+        "price": 32393,
+        "weight": 96483,
+        "deadline": "2023-09-05T22:02:51.123Z",
+        "created_at": "2023-09-06T07:34:24.957Z",
+        "updated_at": "2023-09-06T15:25:43.334Z",
+        "delivery_note_id": "92e28da0-7795-4fd9-999c-5844c6b3e15c"
+      },
+      {
+        "id": "86f590a6-9c53-4d94-9ef3-be1754cdc4ec",
+        "name": "Product C",
+        "quantity": 25376,
+        "price": 72990,
+        "weight": 45405,
+        "deadline": "2023-09-05T19:45:25.436Z",
+        "created_at": "2023-09-05T21:57:27.294Z",
+        "updated_at": "2023-09-05T19:40:10.408Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      },
+      {
+        "id": "0d67dd7e-f8ba-44f8-9c1a-d658e561a5bd",
+        "name": "Product D",
+        "quantity": 24251,
+        "price": 75442,
+        "weight": 85364,
+        "deadline": "2023-09-05T23:43:26.391Z",
+        "created_at": "2023-09-05T18:09:43.070Z",
+        "updated_at": "2023-09-05T20:44:10.371Z",
+        "delivery_note_id": "d515c997-bc77-4d8d-829b-30db2f848fcf"
+      },
+      {
+        "id": "1545ed6a-4463-4022-9b68-a2ec5dae8100",
+        "name": "Product E",
+        "quantity": 41091,
+        "price": 62858,
+        "weight": 35244,
+        "deadline": "2023-09-06T15:12:58.811Z",
+        "created_at": "2023-09-06T10:22:53.287Z",
+        "updated_at": "2023-09-06T12:26:58.268Z",
+        "delivery_note_id": "bff92005-fe33-4501-bcc6-39e97ff42f7f"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "6258973a-f7df-404d-a087-7744d745c473",
+        "email": "Abe51@hotmail.com",
+        "firstName": "Arjun",
+        "lastName": "Macejkovic",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/42748298",
+        "tenantId": null
+      },
+      {
+        "reference": "c22ff693-5ceb-4938-9517-815a8779fe06",
+        "email": "Alexa_Hartmann48@gmail.com",
+        "firstName": "Layne",
+        "lastName": "Waelchi",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/93.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "23ab600b-0ab6-4cc9-bd8e-85114d8bbccc",
+        "email": "Marilyne44@hotmail.com",
+        "firstName": "Kennedy",
+        "lastName": "Vandervort",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/257.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2d6fe7a2-df3c-4e9c-91c6-af9258a9325c",
+        "email": "Milford_Howell@gmail.com",
+        "firstName": "Ezra",
+        "lastName": "Considine",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93682084",
+        "tenantId": null
+      },
+      {
+        "reference": "8afdb681-c864-4f42-a846-bafc7c5e5c0a",
+        "email": "Amya_Steuber@hotmail.com",
+        "firstName": "Kip",
+        "lastName": "Bode",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/541.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "5b56b6ea-27c0-4017-8608-f020a86466e6",
+        "note_number": "DN001",
+        "issuer": "John Doe",
+        "addressee": "ABC Company",
+        "created_at": "2023-09-06T07:30:02.142Z",
+        "updated_at": "2023-09-06T03:03:22.015Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "d4378f45-1528-4b3d-8a4e-1082691e3d63",
+        "note_number": "DN002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Corporation",
+        "created_at": "2023-09-05T23:23:10.777Z",
+        "updated_at": "2023-09-06T00:12:26.922Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "f6a4cb0a-2fc9-4272-b68c-f80df0a61e68",
+        "note_number": "DN003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Enterprises",
+        "created_at": "2023-09-05T18:13:39.237Z",
+        "updated_at": "2023-09-06T00:22:05.970Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "37319ca9-f0a7-4c60-895e-edbc49744a7b",
+        "note_number": "DN004",
+        "issuer": "Sarah Jones",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-06T13:43:07.796Z",
+        "updated_at": "2023-09-06T00:51:21.870Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "313b466c-d4b6-4945-a207-8fe5ef24debe",
+        "note_number": "DN005",
+        "issuer": "Robert Wilson",
+        "addressee": "Best Industries",
+        "created_at": "2023-09-06T00:55:14.943Z",
+        "updated_at": "2023-09-06T03:46:31.892Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "63012a3f-ae60-4ea7-8ffe-eae0083732af",
+        "invalidated_at": "2023-09-06T10:14:04.884Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T04:13:06.084Z",
+        "updated_at": "2023-09-06T06:59:13.865Z",
+        "delivery_note_id": "d4378f45-1528-4b3d-8a4e-1082691e3d63"
+      },
+      {
+        "id": "866392ec-3e39-4027-87dc-04f18c0691ba",
+        "invalidated_at": "2023-09-06T09:42:40.168Z",
+        "reason": "Incorrect address",
+        "created_at": "2023-09-06T15:07:02.646Z",
+        "updated_at": "2023-09-06T03:59:26.344Z",
+        "delivery_note_id": "313b466c-d4b6-4945-a207-8fe5ef24debe"
+      },
+      {
+        "id": "55051642-d813-4f3f-b24b-539a8d8a8175",
+        "invalidated_at": "2023-09-05T20:02:01.619Z",
+        "reason": "Invalid contact number",
+        "created_at": "2023-09-06T10:27:32.517Z",
+        "updated_at": "2023-09-06T16:11:19.512Z",
+        "delivery_note_id": "313b466c-d4b6-4945-a207-8fe5ef24debe"
+      },
+      {
+        "id": "a8b2ba82-3f74-4bf9-9db5-839b33e593c4",
+        "invalidated_at": "2023-09-06T14:55:46.510Z",
+        "reason": "Damaged goods",
+        "created_at": "2023-09-05T19:38:01.618Z",
+        "updated_at": "2023-09-06T06:12:28.737Z",
+        "delivery_note_id": "37319ca9-f0a7-4c60-895e-edbc49744a7b"
+      },
+      {
+        "id": "3c70e697-fc49-4756-a5dc-c4d11a03d626",
+        "invalidated_at": "2023-09-06T07:33:49.673Z",
+        "reason": "Wrong recipient",
+        "created_at": "2023-09-05T20:04:29.967Z",
+        "updated_at": "2023-09-06T14:13:45.786Z",
+        "delivery_note_id": "5b56b6ea-27c0-4017-8608-f020a86466e6"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "593b3e12-8588-4adb-afdb-833c7e7ba3ed",
+        "file_name": "data1.xlsx",
+        "imported_at": "2023-09-06T05:18:11.493Z",
+        "item_limit": 82833,
+        "created_at": "2023-09-05T20:18:15.185Z",
+        "updated_at": "2023-09-06T08:50:21.169Z",
+        "delivery_note_id": "5b56b6ea-27c0-4017-8608-f020a86466e6"
+      },
+      {
+        "id": "b2cb61b9-513e-4a21-a7c1-71a6a1c634e0",
+        "file_name": "data2.xlsx",
+        "imported_at": "2023-09-06T08:18:31.176Z",
+        "item_limit": 61267,
+        "created_at": "2023-09-06T09:06:50.442Z",
+        "updated_at": "2023-09-06T17:28:39.749Z",
+        "delivery_note_id": "f6a4cb0a-2fc9-4272-b68c-f80df0a61e68"
+      },
+      {
+        "id": "18575696-b885-41b6-a9de-9acf4c316ce2",
+        "file_name": "data3.xlsx",
+        "imported_at": "2023-09-05T21:41:45.666Z",
+        "item_limit": 97453,
+        "created_at": "2023-09-06T12:23:42.177Z",
+        "updated_at": "2023-09-06T03:36:50.745Z",
+        "delivery_note_id": "5b56b6ea-27c0-4017-8608-f020a86466e6"
+      },
+      {
+        "id": "503974ff-69a1-4467-83db-feda78a56eb0",
+        "file_name": "data4.xlsx",
+        "imported_at": "2023-09-06T07:34:05.052Z",
+        "item_limit": 78328,
+        "created_at": "2023-09-06T11:05:25.663Z",
+        "updated_at": "2023-09-06T11:36:34.672Z",
+        "delivery_note_id": "5b56b6ea-27c0-4017-8608-f020a86466e6"
+      },
+      {
+        "id": "59f02a15-f001-4fcc-b55d-9be71d2638fe",
+        "file_name": "data5.xlsx",
+        "imported_at": "2023-09-06T06:34:09.273Z",
+        "item_limit": 32908,
+        "created_at": "2023-09-06T00:04:08.804Z",
+        "updated_at": "2023-09-06T10:46:25.307Z",
+        "delivery_note_id": "313b466c-d4b6-4945-a207-8fe5ef24debe"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "20b40524-1785-4b75-951b-63a1a4345ebc",
+        "name": "Product A",
+        "quantity": 52764,
+        "price": 2077,
+        "weight": 19618,
+        "deadline": "2023-09-06T07:40:12.863Z",
+        "created_at": "2023-09-06T01:14:30.896Z",
+        "updated_at": "2023-09-06T11:53:36.170Z",
+        "delivery_note_id": "313b466c-d4b6-4945-a207-8fe5ef24debe"
+      },
+      {
+        "id": "b83fcd88-abbe-40e4-9650-e70ea2c29638",
+        "name": "Product B",
+        "quantity": 61704,
+        "price": 5658,
+        "weight": 71564,
+        "deadline": "2023-09-06T15:24:32.926Z",
+        "created_at": "2023-09-06T00:23:09.256Z",
+        "updated_at": "2023-09-05T20:37:02.176Z",
+        "delivery_note_id": "37319ca9-f0a7-4c60-895e-edbc49744a7b"
+      },
+      {
+        "id": "d645c0e8-5adf-4115-bbb8-a73d29602b93",
+        "name": "Product C",
+        "quantity": 75177,
+        "price": 39529,
+        "weight": 23206,
+        "deadline": "2023-09-06T16:11:08.141Z",
+        "created_at": "2023-09-06T06:39:14.897Z",
+        "updated_at": "2023-09-06T13:20:38.228Z",
+        "delivery_note_id": "313b466c-d4b6-4945-a207-8fe5ef24debe"
+      },
+      {
+        "id": "7acde9b4-55a7-4f20-899e-8db5b395bfbf",
+        "name": "Product D",
+        "quantity": 72586,
+        "price": 485,
+        "weight": 29585,
+        "deadline": "2023-09-06T00:28:56.472Z",
+        "created_at": "2023-09-06T17:47:33.969Z",
+        "updated_at": "2023-09-06T09:12:20.542Z",
+        "delivery_note_id": "5b56b6ea-27c0-4017-8608-f020a86466e6"
+      },
+      {
+        "id": "c906f63f-9032-47da-af29-20dbc476770c",
+        "name": "Product E",
+        "quantity": 84121,
+        "price": 23667,
+        "weight": 36157,
+        "deadline": "2023-09-05T22:47:11.014Z",
+        "created_at": "2023-09-06T17:45:49.065Z",
+        "updated_at": "2023-09-06T13:08:54.892Z",
+        "delivery_note_id": "d4378f45-1528-4b3d-8a4e-1082691e3d63"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "2c971206-8fb7-4121-b519-6a412f8eddf8",
+        "email": "Nicole_Lubowitz34@gmail.com",
+        "firstName": "Milford",
+        "lastName": "Conn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33679109",
+        "tenantId": null
+      },
+      {
+        "reference": "6d657ceb-876d-4e79-b367-d6c0c7980d39",
+        "email": "Odie_Gulgowski20@hotmail.com",
+        "firstName": "Nettie",
+        "lastName": "Kozey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/71450248",
+        "tenantId": null
+      },
+      {
+        "reference": "733773bb-6d52-463f-9c4e-6a27e11570a1",
+        "email": "Myrtle_Herman93@yahoo.com",
+        "firstName": "Christop",
+        "lastName": "Kuvalis",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/704.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2d0d1662-3498-4b7b-bd7d-982e9c17828c",
+        "email": "Josh83@yahoo.com",
+        "firstName": "Lexie",
+        "lastName": "Conn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/88904019",
+        "tenantId": null
+      },
+      {
+        "reference": "4e25850e-a658-4fa0-9df8-83835096f893",
+        "email": "Kurt_Kuphal@gmail.com",
+        "firstName": "Leon",
+        "lastName": "Gerhold",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/409.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "b4bc478d-c71a-41bd-9cc6-cf7bea4897e5",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-06T03:06:34.811Z",
+        "updated_at": "2023-09-05T19:56:13.846Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c263154e-4946-4798-bf8d-93a6ff2b11b8",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Solutions",
+        "created_at": "2023-09-06T11:33:43.063Z",
+        "updated_at": "2023-09-06T08:15:27.864Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "5dfc536a-c27e-495f-a51e-f14ef2a9ac77",
+        "note_number": "DN-003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Industries",
+        "created_at": "2023-09-06T11:36:31.770Z",
+        "updated_at": "2023-09-06T12:54:15.666Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "65977489-7f5c-4a36-a333-1eb4b94e9583",
+        "note_number": "DN-004",
+        "issuer": "Sarah Jones",
+        "addressee": "Acme Co.",
+        "created_at": "2023-09-06T11:24:09.292Z",
+        "updated_at": "2023-09-06T00:59:28.372Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4ee5d853-1c4b-430f-b94a-ef278a00564f",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Alpha Corp",
+        "created_at": "2023-09-05T23:06:53.269Z",
+        "updated_at": "2023-09-06T11:36:58.425Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "7ec4b20b-20bc-430a-a7e9-60639694f1d0",
+        "invalidated_at": "2023-09-05T20:05:57.465Z",
+        "reason": "Incomplete information",
+        "created_at": "2023-09-05T18:10:12.139Z",
+        "updated_at": "2023-09-06T02:23:15.250Z",
+        "delivery_note_id": "b4bc478d-c71a-41bd-9cc6-cf7bea4897e5"
+      },
+      {
+        "id": "3ae31808-09f1-41c5-83fc-bbc303153328",
+        "invalidated_at": "2023-09-06T10:49:19.222Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T00:07:01.774Z",
+        "updated_at": "2023-09-06T15:09:13.815Z",
+        "delivery_note_id": "5dfc536a-c27e-495f-a51e-f14ef2a9ac77"
+      },
+      {
+        "id": "884a83b0-9e4a-4f19-aff2-17902dd913c2",
+        "invalidated_at": "2023-09-05T23:35:24.066Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T00:55:16.302Z",
+        "updated_at": "2023-09-05T23:01:22.885Z",
+        "delivery_note_id": "65977489-7f5c-4a36-a333-1eb4b94e9583"
+      },
+      {
+        "id": "6d3f7c2a-22de-4a1f-a135-d901b7cadf3b",
+        "invalidated_at": "2023-09-06T06:12:47.342Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T00:06:46.341Z",
+        "updated_at": "2023-09-06T01:06:27.277Z",
+        "delivery_note_id": "5dfc536a-c27e-495f-a51e-f14ef2a9ac77"
+      },
+      {
+        "id": "2dca7e0e-89c2-45e7-b12a-4e9526965056",
+        "invalidated_at": "2023-09-06T01:04:22.515Z",
+        "reason": "Damaged packaging",
+        "created_at": "2023-09-05T21:27:57.729Z",
+        "updated_at": "2023-09-06T02:27:24.181Z",
+        "delivery_note_id": "5dfc536a-c27e-495f-a51e-f14ef2a9ac77"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "5b94698f-9759-46b5-a0cc-8c57c7171794",
+        "file_name": "data_2021.xlsx",
+        "imported_at": "2023-09-06T15:12:32.263Z",
+        "item_limit": 16525,
+        "created_at": "2023-09-06T12:57:15.287Z",
+        "updated_at": "2023-09-06T06:11:29.920Z",
+        "delivery_note_id": "4ee5d853-1c4b-430f-b94a-ef278a00564f"
+      },
+      {
+        "id": "d032eb6f-4fb6-4189-b539-4b49dfb6c87f",
+        "file_name": "import_file.xlsx",
+        "imported_at": "2023-09-05T22:10:32.268Z",
+        "item_limit": 55531,
+        "created_at": "2023-09-05T22:58:31.785Z",
+        "updated_at": "2023-09-06T07:27:37.908Z",
+        "delivery_note_id": "65977489-7f5c-4a36-a333-1eb4b94e9583"
+      },
+      {
+        "id": "4a9d5ca1-4114-437f-ac97-3c586df28ad4",
+        "file_name": "sample_data.xls",
+        "imported_at": "2023-09-06T01:19:01.995Z",
+        "item_limit": 66285,
+        "created_at": "2023-09-06T01:47:22.668Z",
+        "updated_at": "2023-09-06T08:47:04.138Z",
+        "delivery_note_id": "4ee5d853-1c4b-430f-b94a-ef278a00564f"
+      },
+      {
+        "id": "8dada2d1-7314-4a3a-885f-8bea0533792f",
+        "file_name": "excel_import_2022.xlsx",
+        "imported_at": "2023-09-06T02:31:31.012Z",
+        "item_limit": 97393,
+        "created_at": "2023-09-05T18:05:45.941Z",
+        "updated_at": "2023-09-05T20:32:04.541Z",
+        "delivery_note_id": "b4bc478d-c71a-41bd-9cc6-cf7bea4897e5"
+      },
+      {
+        "id": "b2f83490-0af5-4720-a0ed-dcccaed40965",
+        "file_name": "data_sheet.xls",
+        "imported_at": "2023-09-06T11:08:38.502Z",
+        "item_limit": 87624,
+        "created_at": "2023-09-05T22:21:06.795Z",
+        "updated_at": "2023-09-06T15:07:19.873Z",
+        "delivery_note_id": "b4bc478d-c71a-41bd-9cc6-cf7bea4897e5"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "e4f9b161-e782-4e48-a0f7-d8c1cea30ce9",
+        "name": "Product A",
+        "quantity": 42221,
+        "price": 2905,
+        "weight": 6212,
+        "deadline": "2023-09-06T16:25:42.626Z",
+        "created_at": "2023-09-06T01:35:48.811Z",
+        "updated_at": "2023-09-06T08:44:40.117Z",
+        "delivery_note_id": "65977489-7f5c-4a36-a333-1eb4b94e9583"
+      },
+      {
+        "id": "b0b9cb60-60a1-4fb5-9281-52a6f58e148a",
+        "name": "Product B",
+        "quantity": 40413,
+        "price": 75033,
+        "weight": 40091,
+        "deadline": "2023-09-06T10:00:54.603Z",
+        "created_at": "2023-09-06T11:59:06.900Z",
+        "updated_at": "2023-09-06T08:14:36.563Z",
+        "delivery_note_id": "65977489-7f5c-4a36-a333-1eb4b94e9583"
+      },
+      {
+        "id": "0d200f8f-04a1-419d-8ed1-902189910d76",
+        "name": "Product C",
+        "quantity": 95053,
+        "price": 80462,
+        "weight": 36916,
+        "deadline": "2023-09-05T23:22:24.195Z",
+        "created_at": "2023-09-06T00:53:21.572Z",
+        "updated_at": "2023-09-06T16:22:46.772Z",
+        "delivery_note_id": "c263154e-4946-4798-bf8d-93a6ff2b11b8"
+      },
+      {
+        "id": "c5ff3f87-21de-4212-bc76-d76b89058f2a",
+        "name": "Product D",
+        "quantity": 12508,
+        "price": 65542,
+        "weight": 81808,
+        "deadline": "2023-09-06T05:04:11.862Z",
+        "created_at": "2023-09-06T14:51:13.349Z",
+        "updated_at": "2023-09-05T21:53:11.248Z",
+        "delivery_note_id": "4ee5d853-1c4b-430f-b94a-ef278a00564f"
+      },
+      {
+        "id": "bee927ac-c7c7-4935-acdb-c80cbcf7b1d9",
+        "name": "Product E",
+        "quantity": 63311,
+        "price": 2025,
+        "weight": 31619,
+        "deadline": "2023-09-06T00:29:13.649Z",
+        "created_at": "2023-09-06T00:04:31.760Z",
+        "updated_at": "2023-09-06T17:49:04.425Z",
+        "delivery_note_id": "b4bc478d-c71a-41bd-9cc6-cf7bea4897e5"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ceb615f8-36f6-45d8-9826-c091a7295230",
+        "email": "Chet29@gmail.com",
+        "firstName": "Dangelo",
+        "lastName": "Wolf",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/739.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c5a4ffe7-ad31-4e2e-aefc-f20b1de58f73",
+        "email": "Nicholas76@gmail.com",
+        "firstName": "Wilburn",
+        "lastName": "Hamill",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38097447",
+        "tenantId": null
+      },
+      {
+        "reference": "46c8fd4c-ff8f-4c78-b2bc-a41918ee9d09",
+        "email": "Marielle18@hotmail.com",
+        "firstName": "Jabari",
+        "lastName": "Torphy",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/8.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7bf79fdb-cac1-4faa-bb55-1be9390744b9",
+        "email": "Elyse_Blick66@hotmail.com",
+        "firstName": "Jovanny",
+        "lastName": "Wisoky-Heller",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/703.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1029564e-6280-4801-8ad9-af8825d5ab3f",
+        "email": "Elva.Hermiston@hotmail.com",
+        "firstName": "Gideon",
+        "lastName": "Dare",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/19717098",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "04de1e12-2fd2-4cd6-8cc2-e39295d34b1f",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Company",
+        "created_at": "2023-09-06T08:18:26.673Z",
+        "updated_at": "2023-09-05T22:49:19.208Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Corporation",
+        "created_at": "2023-09-06T14:34:16.109Z",
+        "updated_at": "2023-09-06T10:44:42.997Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "0b6ba261-c8bd-4338-bac3-664ff4c84f3d",
+        "note_number": "DN-003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Enterprises",
+        "created_at": "2023-09-06T17:19:36.881Z",
+        "updated_at": "2023-09-06T16:03:11.343Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "bd599e67-c4ea-469a-8b2f-c9b6ae6b1a39",
+        "note_number": "DN-004",
+        "issuer": "Sarah Jones",
+        "addressee": "Acme Solutions",
+        "created_at": "2023-09-06T09:35:42.701Z",
+        "updated_at": "2023-09-06T11:35:29.003Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "dd6c1f9e-43e6-44ac-afec-dfa8f544dd35",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Global Innovations",
+        "created_at": "2023-09-06T17:02:17.880Z",
+        "updated_at": "2023-09-05T20:11:51.953Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "3817f292-102f-4d2a-9f44-fda6d8f8b7a9",
+        "invalidated_at": "2023-09-05T19:05:24.502Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T06:14:30.739Z",
+        "updated_at": "2023-09-05T21:07:15.275Z",
+        "delivery_note_id": "04de1e12-2fd2-4cd6-8cc2-e39295d34b1f"
+      },
+      {
+        "id": "b2118ffb-0229-4415-9a72-87851a54de07",
+        "invalidated_at": "2023-09-06T03:13:15.711Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T16:33:58.462Z",
+        "updated_at": "2023-09-06T14:47:43.101Z",
+        "delivery_note_id": "04de1e12-2fd2-4cd6-8cc2-e39295d34b1f"
+      },
+      {
+        "id": "b61550b0-509d-433b-aa9d-4d8fdea25fdc",
+        "invalidated_at": "2023-09-06T03:34:42.541Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T04:55:50.557Z",
+        "updated_at": "2023-09-06T15:05:47.687Z",
+        "delivery_note_id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4"
+      },
+      {
+        "id": "9a67ac78-d3c3-43f0-9185-6f72f72bb464",
+        "invalidated_at": "2023-09-06T14:45:58.683Z",
+        "reason": "Damaged package",
+        "created_at": "2023-09-06T03:47:48.504Z",
+        "updated_at": "2023-09-06T08:05:02.030Z",
+        "delivery_note_id": "0b6ba261-c8bd-4338-bac3-664ff4c84f3d"
+      },
+      {
+        "id": "1a91cd87-d8b1-47d1-b01a-fa2c54eb66af",
+        "invalidated_at": "2023-09-05T18:18:25.684Z",
+        "reason": "Wrong recipient",
+        "created_at": "2023-09-06T15:45:29.893Z",
+        "updated_at": "2023-09-06T11:43:11.577Z",
+        "delivery_note_id": "dd6c1f9e-43e6-44ac-afec-dfa8f544dd35"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "3ee2432d-ea73-4f1e-965a-114a56eb6929",
+        "file_name": "data_file_1.xlsx",
+        "imported_at": "2023-09-05T21:58:21.712Z",
+        "item_limit": 15832,
+        "created_at": "2023-09-06T17:37:44.188Z",
+        "updated_at": "2023-09-05T22:56:56.527Z",
+        "delivery_note_id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4"
+      },
+      {
+        "id": "fa5a46a0-8a26-4497-ac92-e0c6d3c26ba4",
+        "file_name": "data_file_2.xlsx",
+        "imported_at": "2023-09-06T05:30:50.850Z",
+        "item_limit": 78031,
+        "created_at": "2023-09-06T07:41:59.369Z",
+        "updated_at": "2023-09-06T15:31:59.898Z",
+        "delivery_note_id": "04de1e12-2fd2-4cd6-8cc2-e39295d34b1f"
+      },
+      {
+        "id": "439d87c9-67d0-422f-9e75-4155be853386",
+        "file_name": "data_file_3.xlsx",
+        "imported_at": "2023-09-06T11:37:11.551Z",
+        "item_limit": 51132,
+        "created_at": "2023-09-06T03:57:31.015Z",
+        "updated_at": "2023-09-06T03:16:33.743Z",
+        "delivery_note_id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4"
+      },
+      {
+        "id": "02dc1938-b576-419c-a6c6-c056bfcb3a51",
+        "file_name": "data_file_4.xlsx",
+        "imported_at": "2023-09-05T20:22:22.169Z",
+        "item_limit": 20949,
+        "created_at": "2023-09-06T05:57:47.862Z",
+        "updated_at": "2023-09-05T23:03:49.089Z",
+        "delivery_note_id": "bd599e67-c4ea-469a-8b2f-c9b6ae6b1a39"
+      },
+      {
+        "id": "887511de-11c0-4f70-93c5-c22b291a08ef",
+        "file_name": "data_file_5.xlsx",
+        "imported_at": "2023-09-06T00:31:28.716Z",
+        "item_limit": 6634,
+        "created_at": "2023-09-06T07:46:22.660Z",
+        "updated_at": "2023-09-06T09:32:40.268Z",
+        "delivery_note_id": "bd599e67-c4ea-469a-8b2f-c9b6ae6b1a39"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "4d156d32-da93-43d9-8554-6cdb72572e81",
+        "name": "Product A",
+        "quantity": 50701,
+        "price": 75406,
+        "weight": 7799,
+        "deadline": "2023-09-06T08:51:37.008Z",
+        "created_at": "2023-09-05T21:48:27.477Z",
+        "updated_at": "2023-09-06T04:44:30.209Z",
+        "delivery_note_id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4"
+      },
+      {
+        "id": "d85bf040-55ff-4729-bf91-c3605b769616",
+        "name": "Product B",
+        "quantity": 71065,
+        "price": 13005,
+        "weight": 17763,
+        "deadline": "2023-09-06T07:07:21.492Z",
+        "created_at": "2023-09-05T19:22:24.132Z",
+        "updated_at": "2023-09-06T07:13:27.015Z",
+        "delivery_note_id": "68a344ff-1455-4a3e-8854-d42e3a2b87f4"
+      },
+      {
+        "id": "ddc4fe25-4f39-4df9-8322-6fe62e29e088",
+        "name": "Product C",
+        "quantity": 2878,
+        "price": 37820,
+        "weight": 99220,
+        "deadline": "2023-09-06T14:17:17.226Z",
+        "created_at": "2023-09-05T23:58:13.054Z",
+        "updated_at": "2023-09-06T12:31:52.294Z",
+        "delivery_note_id": "0b6ba261-c8bd-4338-bac3-664ff4c84f3d"
+      },
+      {
+        "id": "f9b7b5a3-4175-4351-a712-02a21873d6c1",
+        "name": "Product D",
+        "quantity": 79979,
+        "price": 90272,
+        "weight": 82104,
+        "deadline": "2023-09-05T22:13:32.536Z",
+        "created_at": "2023-09-06T08:45:28.957Z",
+        "updated_at": "2023-09-06T08:27:59.285Z",
+        "delivery_note_id": "dd6c1f9e-43e6-44ac-afec-dfa8f544dd35"
+      },
+      {
+        "id": "13062ee1-f253-40c8-878a-054cc570bdd3",
+        "name": "Product E",
+        "quantity": 73647,
+        "price": 11385,
+        "weight": 6885,
+        "deadline": "2023-09-06T11:20:11.580Z",
+        "created_at": "2023-09-06T02:23:03.422Z",
+        "updated_at": "2023-09-06T11:43:40.592Z",
+        "delivery_note_id": "bd599e67-c4ea-469a-8b2f-c9b6ae6b1a39"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "399836fe-dc9e-4e3e-94e4-42d85aad3263",
+        "email": "Jazlyn_Heidenreich@gmail.com",
+        "firstName": "Elias",
+        "lastName": "Bogan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1131.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b671f9b5-6290-461e-b236-4799bcea19ae",
+        "email": "Janae42@yahoo.com",
+        "firstName": "Keven",
+        "lastName": "O'Hara",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/31017488",
+        "tenantId": null
+      },
+      {
+        "reference": "422fd984-cd25-48be-8e91-9a811f3db037",
+        "email": "Maribel.Zieme5@yahoo.com",
+        "firstName": "Glennie",
+        "lastName": "Brakus",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49816933",
+        "tenantId": null
+      },
+      {
+        "reference": "27d08846-885f-40e2-bf15-d00c16b2c3fc",
+        "email": "Rosetta67@hotmail.com",
+        "firstName": "Wilburn",
+        "lastName": "Hoppe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/463.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a711f31a-3afb-4a96-b75c-6eba6c02faec",
+        "email": "Liam55@yahoo.com",
+        "firstName": "Dillan",
+        "lastName": "Effertz",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1156.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "6d875e25-594e-494c-9fd6-82631373cf1d",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ACME Inc",
+        "created_at": "2023-09-05T22:52:03.776Z",
+        "updated_at": "2023-09-05T19:26:12.470Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "c20dd2c0-30f5-4832-a0a7-19bcbd8a08bc",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Ltd",
+        "created_at": "2023-09-05T23:05:37.158Z",
+        "updated_at": "2023-09-05T19:47:39.302Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "322c6790-e7e0-48d2-b7f7-f64b2960970c",
+        "note_number": "DN-003",
+        "issuer": "Michael Brown",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-06T17:40:18.801Z",
+        "updated_at": "2023-09-06T05:01:28.770Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "bf9ddf1c-58b0-4d64-a494-5bea1d9e4c7f",
+        "note_number": "DN-004",
+        "issuer": "Sarah Jones",
+        "addressee": "Globex Industries",
+        "created_at": "2023-09-06T09:13:56.934Z",
+        "updated_at": "2023-09-06T14:57:34.523Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "46c1180e-8480-447c-b13e-ed135b1084ef",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Initech",
+        "created_at": "2023-09-06T13:44:56.006Z",
+        "updated_at": "2023-09-06T16:22:56.850Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "b51edc00-cb85-4ef5-910b-4be8f81e6456",
+        "invalidated_at": "2023-09-06T01:42:28.592Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T02:51:23.705Z",
+        "updated_at": "2023-09-05T23:48:59.326Z",
+        "delivery_note_id": "bf9ddf1c-58b0-4d64-a494-5bea1d9e4c7f"
+      },
+      {
+        "id": "56e8a269-a95a-4ff2-b93c-3c2c48613ad7",
+        "invalidated_at": "2023-09-06T00:58:08.646Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-05T23:54:05.529Z",
+        "updated_at": "2023-09-06T04:12:35.808Z",
+        "delivery_note_id": "46c1180e-8480-447c-b13e-ed135b1084ef"
+      },
+      {
+        "id": "399fc7e4-29ac-4a3e-85b5-b633c5904bb6",
+        "invalidated_at": "2023-09-05T18:11:53.417Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T12:52:02.114Z",
+        "updated_at": "2023-09-06T14:19:52.529Z",
+        "delivery_note_id": "322c6790-e7e0-48d2-b7f7-f64b2960970c"
+      },
+      {
+        "id": "cf6a1faf-f2b8-4593-b2c1-a3d0a9445a27",
+        "invalidated_at": "2023-09-05T21:44:28.463Z",
+        "reason": "Damaged goods",
+        "created_at": "2023-09-06T09:23:54.004Z",
+        "updated_at": "2023-09-05T20:05:42.627Z",
+        "delivery_note_id": "6d875e25-594e-494c-9fd6-82631373cf1d"
+      },
+      {
+        "id": "3ad27531-f080-48d0-8107-26d7fead6950",
+        "invalidated_at": "2023-09-06T17:52:04.620Z",
+        "reason": "Wrong delivery date",
+        "created_at": "2023-09-06T11:13:32.690Z",
+        "updated_at": "2023-09-05T18:16:13.650Z",
+        "delivery_note_id": "46c1180e-8480-447c-b13e-ed135b1084ef"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "e49d7325-c275-49c6-81fc-e96cc639dbb1",
+        "file_name": "import_data_2021.xlsx",
+        "imported_at": "2023-09-06T04:28:49.759Z",
+        "item_limit": 15484,
+        "created_at": "2023-09-05T20:17:12.888Z",
+        "updated_at": "2023-09-06T12:35:55.532Z",
+        "delivery_note_id": "bf9ddf1c-58b0-4d64-a494-5bea1d9e4c7f"
+      },
+      {
+        "id": "8a0a7e43-603d-4e84-b19c-bd1e3c06e021",
+        "file_name": "sales_report_q2.xlsx",
+        "imported_at": "2023-09-06T17:30:01.302Z",
+        "item_limit": 16170,
+        "created_at": "2023-09-06T08:58:00.956Z",
+        "updated_at": "2023-09-06T01:07:46.958Z",
+        "delivery_note_id": "c20dd2c0-30f5-4832-a0a7-19bcbd8a08bc"
+      },
+      {
+        "id": "63a0d585-5045-4b09-b831-ede2708e058c",
+        "file_name": "inventory_update.xlsx",
+        "imported_at": "2023-09-05T18:28:38.948Z",
+        "item_limit": 22792,
+        "created_at": "2023-09-06T00:15:54.857Z",
+        "updated_at": "2023-09-06T05:12:35.011Z",
+        "delivery_note_id": "c20dd2c0-30f5-4832-a0a7-19bcbd8a08bc"
+      },
+      {
+        "id": "202e8afb-51ab-4faf-aad9-d1bb50bc7d9c",
+        "file_name": "customer_list.xlsx",
+        "imported_at": "2023-09-06T04:47:46.097Z",
+        "item_limit": 93275,
+        "created_at": "2023-09-05T20:02:54.589Z",
+        "updated_at": "2023-09-06T02:14:29.475Z",
+        "delivery_note_id": "46c1180e-8480-447c-b13e-ed135b1084ef"
+      },
+      {
+        "id": "d78d418e-f2ac-45f6-b087-1b0034f98d6c",
+        "file_name": "product_catalog.xlsx",
+        "imported_at": "2023-09-05T17:56:37.730Z",
+        "item_limit": 91030,
+        "created_at": "2023-09-06T08:23:33.517Z",
+        "updated_at": "2023-09-05T23:05:02.660Z",
+        "delivery_note_id": "6d875e25-594e-494c-9fd6-82631373cf1d"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "948debcc-6513-4635-90a3-b504773a63de",
+        "name": "Product A",
+        "quantity": 40786,
+        "price": 69186,
+        "weight": 86957,
+        "deadline": "2023-09-06T05:31:46.790Z",
+        "created_at": "2023-09-06T01:49:12.103Z",
+        "updated_at": "2023-09-06T12:14:51.633Z",
+        "delivery_note_id": "6d875e25-594e-494c-9fd6-82631373cf1d"
+      },
+      {
+        "id": "cc4b1f75-f6af-4834-90aa-0a2e83189d10",
+        "name": "Product B",
+        "quantity": 38656,
+        "price": 52964,
+        "weight": 47900,
+        "deadline": "2023-09-05T18:50:40.341Z",
+        "created_at": "2023-09-06T12:35:13.072Z",
+        "updated_at": "2023-09-06T06:45:35.923Z",
+        "delivery_note_id": "322c6790-e7e0-48d2-b7f7-f64b2960970c"
+      },
+      {
+        "id": "e4a1aa4b-179b-495c-a47a-a3a08272e2b7",
+        "name": "Product C",
+        "quantity": 6926,
+        "price": 10828,
+        "weight": 42955,
+        "deadline": "2023-09-06T13:44:37.712Z",
+        "created_at": "2023-09-06T16:20:37.005Z",
+        "updated_at": "2023-09-06T03:47:21.357Z",
+        "delivery_note_id": "bf9ddf1c-58b0-4d64-a494-5bea1d9e4c7f"
+      },
+      {
+        "id": "41d71088-afc6-44a6-98cf-c642222579cc",
+        "name": "Product D",
+        "quantity": 7328,
+        "price": 97732,
+        "weight": 20850,
+        "deadline": "2023-09-05T23:38:47.727Z",
+        "created_at": "2023-09-05T19:02:36.227Z",
+        "updated_at": "2023-09-06T07:05:23.094Z",
+        "delivery_note_id": "322c6790-e7e0-48d2-b7f7-f64b2960970c"
+      },
+      {
+        "id": "110fceb8-e0ca-48c2-839e-b2e83af6d9ff",
+        "name": "Product E",
+        "quantity": 40885,
+        "price": 67606,
+        "weight": 9600,
+        "deadline": "2023-09-06T00:24:36.055Z",
+        "created_at": "2023-09-06T06:01:25.815Z",
+        "updated_at": "2023-09-06T15:30:30.806Z",
+        "delivery_note_id": "322c6790-e7e0-48d2-b7f7-f64b2960970c"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "67328e93-9176-46b2-b219-10176a0cfca6",
+        "email": "Claudie.Lang82@gmail.com",
+        "firstName": "Retha",
+        "lastName": "Hegmann",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/132.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3456d510-8c19-4baa-ad30-55e32ddba59f",
+        "email": "Halie18@yahoo.com",
+        "firstName": "Jacinthe",
+        "lastName": "Moen",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/48.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c04073c5-ef78-480c-8fda-0f80597c79d3",
+        "email": "Angus_Hyatt@hotmail.com",
+        "firstName": "Rose",
+        "lastName": "Johnson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1182.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1797a617-55f5-429c-b4f9-22706de0ec50",
+        "email": "Mariela_Batz@yahoo.com",
+        "firstName": "Tatum",
+        "lastName": "Howell",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/336.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2dae9832-c64e-4856-8a96-f1dbe62714e9",
+        "email": "Carolanne85@yahoo.com",
+        "firstName": "Shana",
+        "lastName": "Koelpin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22550687",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "f9c3d3cf-5ed0-4c89-9026-94fc65c566b7",
+        "note_number": "DN001",
+        "issuer": "John Doe",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-05T22:58:59.759Z",
+        "updated_at": "2023-09-06T08:39:47.124Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "09759985-a3ae-4c44-94e5-4e94145c6989",
+        "note_number": "DN002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Ltd.",
+        "created_at": "2023-09-05T19:41:59.513Z",
+        "updated_at": "2023-09-06T12:38:08.350Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "334d9cbd-062b-44cf-8a15-fb3248d69538",
+        "note_number": "DN003",
+        "issuer": "Michael Brown",
+        "addressee": "Acme Industries",
+        "created_at": "2023-09-06T04:29:55.914Z",
+        "updated_at": "2023-09-06T10:32:56.844Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "04cd21f1-1905-4f4b-b1ec-3c7ec4279ff1",
+        "note_number": "DN004",
+        "issuer": "Sarah Jones",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-06T00:59:05.134Z",
+        "updated_at": "2023-09-06T16:21:29.171Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "1b275564-3980-48f3-9001-0d7057a0ca16",
+        "note_number": "DN005",
+        "issuer": "David Wilson",
+        "addressee": "Prime Services",
+        "created_at": "2023-09-06T05:26:31.388Z",
+        "updated_at": "2023-09-06T13:17:50.249Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "ecd29c55-2661-45fc-a416-bd5eaced5f3e",
+        "invalidated_at": "2023-09-06T08:58:24.954Z",
+        "reason": "Incomplete information",
+        "created_at": "2023-09-05T19:50:59.816Z",
+        "updated_at": "2023-09-06T02:37:12.735Z",
+        "delivery_note_id": "1b275564-3980-48f3-9001-0d7057a0ca16"
+      },
+      {
+        "id": "8d60e22d-46ce-4481-8014-015fb171d95c",
+        "invalidated_at": "2023-09-05T22:14:42.335Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T04:22:30.507Z",
+        "updated_at": "2023-09-06T08:22:37.030Z",
+        "delivery_note_id": "334d9cbd-062b-44cf-8a15-fb3248d69538"
+      },
+      {
+        "id": "f1b37c9a-76c5-4742-b40a-87cec794da2d",
+        "invalidated_at": "2023-09-06T12:26:39.163Z",
+        "reason": "Duplicate entry",
+        "created_at": "2023-09-05T21:02:53.687Z",
+        "updated_at": "2023-09-06T12:41:48.312Z",
+        "delivery_note_id": "09759985-a3ae-4c44-94e5-4e94145c6989"
+      },
+      {
+        "id": "3d06fcf4-0def-4a7c-8c34-b6f2e195c39c",
+        "invalidated_at": "2023-09-05T19:40:54.931Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T13:06:21.067Z",
+        "updated_at": "2023-09-06T10:02:17.077Z",
+        "delivery_note_id": "334d9cbd-062b-44cf-8a15-fb3248d69538"
+      },
+      {
+        "id": "d6fc1dc6-c89c-4ad2-8a3d-cf8d41c86419",
+        "invalidated_at": "2023-09-06T04:25:42.883Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T16:52:36.899Z",
+        "updated_at": "2023-09-06T02:02:25.970Z",
+        "delivery_note_id": "1b275564-3980-48f3-9001-0d7057a0ca16"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "f517d085-7c3b-4845-a1db-9b95217e943c",
+        "file_name": "import_file_1.xlsx",
+        "imported_at": "2023-09-06T10:44:25.586Z",
+        "item_limit": 57642,
+        "created_at": "2023-09-06T04:06:20.580Z",
+        "updated_at": "2023-09-06T13:56:40.741Z",
+        "delivery_note_id": "334d9cbd-062b-44cf-8a15-fb3248d69538"
+      },
+      {
+        "id": "b32c667e-10fc-4e54-924c-777f1a4404be",
+        "file_name": "import_file_2.xlsx",
+        "imported_at": "2023-09-06T00:34:16.597Z",
+        "item_limit": 38219,
+        "created_at": "2023-09-06T04:38:39.300Z",
+        "updated_at": "2023-09-06T11:49:24.310Z",
+        "delivery_note_id": "04cd21f1-1905-4f4b-b1ec-3c7ec4279ff1"
+      },
+      {
+        "id": "97ae0def-fc1f-47f7-b52f-f387624c194a",
+        "file_name": "import_file_3.xlsx",
+        "imported_at": "2023-09-06T14:34:01.320Z",
+        "item_limit": 21876,
+        "created_at": "2023-09-05T21:27:32.715Z",
+        "updated_at": "2023-09-05T18:22:49.899Z",
+        "delivery_note_id": "09759985-a3ae-4c44-94e5-4e94145c6989"
+      },
+      {
+        "id": "4ae1bf64-5d4c-43b8-832f-e8b72ba913b5",
+        "file_name": "import_file_4.xlsx",
+        "imported_at": "2023-09-06T01:23:45.307Z",
+        "item_limit": 83548,
+        "created_at": "2023-09-06T09:30:31.792Z",
+        "updated_at": "2023-09-06T16:48:08.803Z",
+        "delivery_note_id": "f9c3d3cf-5ed0-4c89-9026-94fc65c566b7"
+      },
+      {
+        "id": "e488a43f-ef58-4ade-9a1d-f300e8420935",
+        "file_name": "import_file_5.xlsx",
+        "imported_at": "2023-09-05T18:39:28.356Z",
+        "item_limit": 43009,
+        "created_at": "2023-09-06T05:54:36.037Z",
+        "updated_at": "2023-09-06T12:01:24.883Z",
+        "delivery_note_id": "334d9cbd-062b-44cf-8a15-fb3248d69538"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "3e88c197-4a79-4828-902e-6fd07b0a10de",
+        "name": "Product A",
+        "quantity": 47587,
+        "price": 47969,
+        "weight": 75164,
+        "deadline": "2023-09-06T02:18:03.864Z",
+        "created_at": "2023-09-06T02:49:15.755Z",
+        "updated_at": "2023-09-06T06:39:31.554Z",
+        "delivery_note_id": "1b275564-3980-48f3-9001-0d7057a0ca16"
+      },
+      {
+        "id": "1ea26adf-0242-4ffe-a513-8a9ead25ff66",
+        "name": "Product B",
+        "quantity": 44502,
+        "price": 6183,
+        "weight": 25187,
+        "deadline": "2023-09-06T17:32:41.315Z",
+        "created_at": "2023-09-05T19:07:44.455Z",
+        "updated_at": "2023-09-06T15:19:56.962Z",
+        "delivery_note_id": "04cd21f1-1905-4f4b-b1ec-3c7ec4279ff1"
+      },
+      {
+        "id": "87eba4a4-b933-413c-98d5-a7a04bb34024",
+        "name": "Product C",
+        "quantity": 83438,
+        "price": 69687,
+        "weight": 37003,
+        "deadline": "2023-09-05T20:08:28.081Z",
+        "created_at": "2023-09-05T20:16:35.317Z",
+        "updated_at": "2023-09-05T18:54:26.382Z",
+        "delivery_note_id": "09759985-a3ae-4c44-94e5-4e94145c6989"
+      },
+      {
+        "id": "71019bac-c965-4c68-91dd-dc8ee16c8e8f",
+        "name": "Product D",
+        "quantity": 62489,
+        "price": 60009,
+        "weight": 33009,
+        "deadline": "2023-09-06T05:52:33.486Z",
+        "created_at": "2023-09-05T20:51:11.870Z",
+        "updated_at": "2023-09-06T08:57:13.096Z",
+        "delivery_note_id": "09759985-a3ae-4c44-94e5-4e94145c6989"
+      },
+      {
+        "id": "747dfcaf-fa59-4257-87e6-25aebc100d9f",
+        "name": "Product E",
+        "quantity": 79155,
+        "price": 90690,
+        "weight": 37784,
+        "deadline": "2023-09-06T03:32:46.289Z",
+        "created_at": "2023-09-06T07:42:41.131Z",
+        "updated_at": "2023-09-05T23:56:52.422Z",
+        "delivery_note_id": "09759985-a3ae-4c44-94e5-4e94145c6989"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "3a6e9b0e-95b3-479d-95dd-13e12b126f37",
+        "email": "Rico.Emmerich10@yahoo.com",
+        "firstName": "Destiney",
+        "lastName": "McLaughlin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/29588169",
+        "tenantId": null
+      },
+      {
+        "reference": "e42b3b6f-5ad1-49ca-ab3f-e35d7410d7dd",
+        "email": "Orpha_Herzog91@gmail.com",
+        "firstName": "Kitty",
+        "lastName": "Nolan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/467.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6cc661dd-dd05-417f-a7e9-e3b4a0359348",
+        "email": "Guy_Predovic@gmail.com",
+        "firstName": "Diamond",
+        "lastName": "Rempel-Hauck",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62811695",
+        "tenantId": null
+      },
+      {
+        "reference": "9c67a0dc-d359-4321-bbef-63d928b93986",
+        "email": "Jessie49@yahoo.com",
+        "firstName": "Dedrick",
+        "lastName": "Cummings",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/87858876",
+        "tenantId": null
+      },
+      {
+        "reference": "e940ffd0-f2f9-4192-90c0-1180cc11c895",
+        "email": "Alfonzo99@yahoo.com",
+        "firstName": "Crystel",
+        "lastName": "Kuhic",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/902.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "73135122-cde9-44ee-a913-4f1e5e93b486",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Company",
+        "created_at": "2023-09-06T08:07:11.534Z",
+        "updated_at": "2023-09-06T02:33:25.095Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8afbf5c9-c978-4dfd-afd4-82beaaaa84d0",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Corporation",
+        "created_at": "2023-09-06T06:10:55.147Z",
+        "updated_at": "2023-09-06T15:09:00.806Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e",
+        "note_number": "DN-003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Enterprises",
+        "created_at": "2023-09-06T00:51:56.965Z",
+        "updated_at": "2023-09-05T18:15:49.009Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "dc235214-8502-407c-8de0-7f0328d60668",
+        "note_number": "DN-004",
+        "issuer": "Sarah Jones",
+        "addressee": "Acme Ltd.",
+        "created_at": "2023-09-05T23:10:43.357Z",
+        "updated_at": "2023-09-06T16:55:38.563Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "b5ce9e29-7401-4eed-a6e9-0eeeed57443e",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Global Solutions",
+        "created_at": "2023-09-06T10:27:17.492Z",
+        "updated_at": "2023-09-06T14:38:55.252Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "55ec07bf-af78-4dca-a719-3e5ad809c78b",
+        "invalidated_at": "2023-09-06T00:21:56.446Z",
+        "reason": "Invalid address",
+        "created_at": "2023-09-06T16:06:53.544Z",
+        "updated_at": "2023-09-06T09:53:06.062Z",
+        "delivery_note_id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e"
+      },
+      {
+        "id": "0300d60d-5f70-4b11-ba27-08b8b571d91c",
+        "invalidated_at": "2023-09-06T13:36:24.546Z",
+        "reason": "Missing signature",
+        "created_at": "2023-09-06T17:30:07.173Z",
+        "updated_at": "2023-09-06T12:14:10.191Z",
+        "delivery_note_id": "b5ce9e29-7401-4eed-a6e9-0eeeed57443e"
+      },
+      {
+        "id": "ae82070c-4e40-430b-af17-f32ca3b1ef34",
+        "invalidated_at": "2023-09-06T02:11:33.629Z",
+        "reason": "Incorrect item quantity",
+        "created_at": "2023-09-06T08:04:20.890Z",
+        "updated_at": "2023-09-06T02:52:05.701Z",
+        "delivery_note_id": "b5ce9e29-7401-4eed-a6e9-0eeeed57443e"
+      },
+      {
+        "id": "3ccac342-8d23-4447-b709-f3342573b30f",
+        "invalidated_at": "2023-09-05T22:02:26.604Z",
+        "reason": "Damaged goods",
+        "created_at": "2023-09-06T05:31:53.058Z",
+        "updated_at": "2023-09-05T19:37:07.950Z",
+        "delivery_note_id": "dc235214-8502-407c-8de0-7f0328d60668"
+      },
+      {
+        "id": "be03f36e-c63b-4181-b267-91d2f2e36db0",
+        "invalidated_at": "2023-09-06T09:51:01.115Z",
+        "reason": "Late delivery",
+        "created_at": "2023-09-05T19:47:47.464Z",
+        "updated_at": "2023-09-06T05:26:20.636Z",
+        "delivery_note_id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "6fba4830-5c9c-4de3-809c-a810e941061d",
+        "file_name": "import_data_2022.xlsx",
+        "imported_at": "2023-09-06T14:05:15.983Z",
+        "item_limit": 85830,
+        "created_at": "2023-09-06T11:04:24.436Z",
+        "updated_at": "2023-09-06T04:37:59.629Z",
+        "delivery_note_id": "b5ce9e29-7401-4eed-a6e9-0eeeed57443e"
+      },
+      {
+        "id": "f2995daf-881c-4137-b76f-254b98a5ee3b",
+        "file_name": "sales_data_q3_2022.xlsx",
+        "imported_at": "2023-09-06T04:14:24.775Z",
+        "item_limit": 64268,
+        "created_at": "2023-09-06T16:14:46.751Z",
+        "updated_at": "2023-09-06T15:18:28.855Z",
+        "delivery_note_id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e"
+      },
+      {
+        "id": "954e2aae-e496-4a0a-b654-d7131fa68179",
+        "file_name": "inventory_update.xlsx",
+        "imported_at": "2023-09-06T03:37:30.689Z",
+        "item_limit": 44144,
+        "created_at": "2023-09-06T03:43:12.924Z",
+        "updated_at": "2023-09-05T23:53:06.366Z",
+        "delivery_note_id": "b5ce9e29-7401-4eed-a6e9-0eeeed57443e"
+      },
+      {
+        "id": "aa4b709f-911a-4742-a8b4-eca4d2953de3",
+        "file_name": "customer_list_2022.xlsx",
+        "imported_at": "2023-09-06T03:19:08.136Z",
+        "item_limit": 28696,
+        "created_at": "2023-09-06T06:37:03.911Z",
+        "updated_at": "2023-09-05T21:01:18.496Z",
+        "delivery_note_id": "dc235214-8502-407c-8de0-7f0328d60668"
+      },
+      {
+        "id": "5bf25104-6f64-4972-a4e3-c6f5776d915b",
+        "file_name": "product_catalog.xlsx",
+        "imported_at": "2023-09-06T03:46:38.635Z",
+        "item_limit": 24959,
+        "created_at": "2023-09-06T16:07:59.345Z",
+        "updated_at": "2023-09-05T19:12:01.568Z",
+        "delivery_note_id": "8afbf5c9-c978-4dfd-afd4-82beaaaa84d0"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "285b5a7b-293a-4f32-95d7-20948dd2ea99",
+        "name": "Product A",
+        "quantity": 36405,
+        "price": 35511,
+        "weight": 94119,
+        "deadline": "2023-09-05T20:27:15.184Z",
+        "created_at": "2023-09-06T08:32:10.848Z",
+        "updated_at": "2023-09-06T12:08:37.382Z",
+        "delivery_note_id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e"
+      },
+      {
+        "id": "acba74c2-0e85-4262-bc2c-242a5a91b836",
+        "name": "Product B",
+        "quantity": 77552,
+        "price": 76998,
+        "weight": 35696,
+        "deadline": "2023-09-06T12:28:51.363Z",
+        "created_at": "2023-09-05T18:45:12.893Z",
+        "updated_at": "2023-09-05T23:22:53.062Z",
+        "delivery_note_id": "73135122-cde9-44ee-a913-4f1e5e93b486"
+      },
+      {
+        "id": "eab8b46b-8c2b-4fe4-bf62-928e8e961c15",
+        "name": "Product C",
+        "quantity": 28338,
+        "price": 8909,
+        "weight": 23276,
+        "deadline": "2023-09-06T15:36:35.860Z",
+        "created_at": "2023-09-06T06:02:51.898Z",
+        "updated_at": "2023-09-06T04:21:57.562Z",
+        "delivery_note_id": "ae669cc5-4e4f-4a28-acb7-99ffa338665e"
+      },
+      {
+        "id": "93273a2b-eb4a-4752-9d3f-ee8ea5755502",
+        "name": "Product D",
+        "quantity": 6233,
+        "price": 17662,
+        "weight": 47229,
+        "deadline": "2023-09-06T07:40:09.078Z",
+        "created_at": "2023-09-05T19:53:47.085Z",
+        "updated_at": "2023-09-05T20:17:42.684Z",
+        "delivery_note_id": "73135122-cde9-44ee-a913-4f1e5e93b486"
+      },
+      {
+        "id": "079b922b-9880-4d02-bd5a-61e4bf755e5b",
+        "name": "Product E",
+        "quantity": 75653,
+        "price": 73813,
+        "weight": 222,
+        "deadline": "2023-09-06T07:34:34.919Z",
+        "created_at": "2023-09-06T14:40:39.516Z",
+        "updated_at": "2023-09-05T18:38:14.043Z",
+        "delivery_note_id": "8afbf5c9-c978-4dfd-afd4-82beaaaa84d0"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "33aa15cf-f5da-4e0e-a0ce-72ae5f23c0b0",
+        "email": "Stephanie.Wintheiser@gmail.com",
+        "firstName": "Leatha",
+        "lastName": "Nader",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/40.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "4b7138d6-256f-45a0-a1eb-82d321a66ea4",
+        "email": "Tyrel_Padberg@yahoo.com",
+        "firstName": "Kaylah",
+        "lastName": "Nicolas",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/899.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "15f56ef4-52a0-4b39-86c2-c4033a1ee764",
+        "email": "Nettie_Graham57@yahoo.com",
+        "firstName": "Dewayne",
+        "lastName": "Quigley",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/804.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "30df6399-94fc-4c29-a9d4-a941dabf6ee3",
+        "email": "Nia79@hotmail.com",
+        "firstName": "Jeff",
+        "lastName": "Hickle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1217.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a738b895-fa89-4c5f-bc75-a530da904619",
+        "email": "Marcia.Kuhn@gmail.com",
+        "firstName": "Trystan",
+        "lastName": "Jones-Keeling",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/733.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "delivery_note": [
+      {
+        "id": "f088381f-0c54-4af3-bb39-f0ae861db291",
+        "note_number": "DN-001",
+        "issuer": "John Doe",
+        "addressee": "ABC Corporation",
+        "created_at": "2023-09-06T05:36:30.552Z",
+        "updated_at": "2023-09-06T00:18:53.099Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "15777a86-15f0-464b-9d43-45cc1930d820",
+        "note_number": "DN-002",
+        "issuer": "Jane Smith",
+        "addressee": "XYZ Solutions",
+        "created_at": "2023-09-06T10:12:05.287Z",
+        "updated_at": "2023-09-06T15:08:40.964Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "8ea44ee2-9745-4d1e-9188-f4cf4f15ce22",
+        "note_number": "DN-003",
+        "issuer": "Michael Brown",
+        "addressee": "123 Industries",
+        "created_at": "2023-09-06T15:04:23.332Z",
+        "updated_at": "2023-09-06T05:02:49.029Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4a8abd45-d1e0-4dba-82b1-2cd3970ee536",
+        "note_number": "DN-004",
+        "issuer": "Sarah Jones",
+        "addressee": "Acme Co.",
+        "created_at": "2023-09-05T22:32:49.174Z",
+        "updated_at": "2023-09-06T07:18:23.234Z",
+        "company_id": "main_entity_pk"
+      },
+      {
+        "id": "4cee8617-fdcd-4d64-8071-62400c8d56bb",
+        "note_number": "DN-005",
+        "issuer": "David Wilson",
+        "addressee": "Great Ventures",
+        "created_at": "2023-09-06T09:18:23.740Z",
+        "updated_at": "2023-09-06T04:47:58.364Z",
+        "company_id": "main_entity_pk"
+      }
+    ],
+    "invalid_note": [
+      {
+        "id": "651a7774-ed13-430c-a389-837203912243",
+        "invalidated_at": "2023-09-06T13:42:29.896Z",
+        "reason": "Incomplete information",
+        "created_at": "2023-09-06T13:31:48.333Z",
+        "updated_at": "2023-09-06T13:19:26.092Z",
+        "delivery_note_id": "8ea44ee2-9745-4d1e-9188-f4cf4f15ce22"
+      },
+      {
+        "id": "da6cfaec-6607-4a8d-8067-8aa93c0ac9c8",
+        "invalidated_at": "2023-09-06T06:06:49.117Z",
+        "reason": "Invalid format",
+        "created_at": "2023-09-06T11:43:27.443Z",
+        "updated_at": "2023-09-06T13:51:23.253Z",
+        "delivery_note_id": "4a8abd45-d1e0-4dba-82b1-2cd3970ee536"
+      },
+      {
+        "id": "d98e5dac-baaf-4c67-b126-e4658df765b2",
+        "invalidated_at": "2023-09-06T12:48:46.069Z",
+        "reason": "Duplicate entry",
+        "created_at": "2023-09-06T10:44:39.627Z",
+        "updated_at": "2023-09-05T19:51:42.455Z",
+        "delivery_note_id": "4a8abd45-d1e0-4dba-82b1-2cd3970ee536"
+      },
+      {
+        "id": "63b2da8d-8a5d-4cd4-a7c3-7da41cad0db7",
+        "invalidated_at": "2023-09-06T10:31:56.520Z",
+        "reason": "Unauthorized access",
+        "created_at": "2023-09-05T18:01:01.463Z",
+        "updated_at": "2023-09-06T04:37:46.909Z",
+        "delivery_note_id": "15777a86-15f0-464b-9d43-45cc1930d820"
+      },
+      {
+        "id": "b8a0b54b-37cb-427d-91cc-4e99a30e2d34",
+        "invalidated_at": "2023-09-06T01:22:18.940Z",
+        "reason": "Data mismatch",
+        "created_at": "2023-09-06T16:16:23.252Z",
+        "updated_at": "2023-09-05T19:51:16.038Z",
+        "delivery_note_id": "15777a86-15f0-464b-9d43-45cc1930d820"
+      }
+    ],
+    "excel_import": [
+      {
+        "id": "a6e649fe-8e15-43fc-9bcf-aea0d68125b4",
+        "file_name": "data_file_1.xlsx",
+        "imported_at": "2023-09-06T15:37:02.628Z",
+        "item_limit": 41409,
+        "created_at": "2023-09-06T11:40:02.558Z",
+        "updated_at": "2023-09-05T21:02:58.530Z",
+        "delivery_note_id": "f088381f-0c54-4af3-bb39-f0ae861db291"
+      },
+      {
+        "id": "6c030246-864f-4c5b-a57f-7fefb0a95c33",
+        "file_name": "data_file_2.xlsx",
+        "imported_at": "2023-09-06T07:48:26.214Z",
+        "item_limit": 30975,
+        "created_at": "2023-09-06T00:13:32.537Z",
+        "updated_at": "2023-09-06T00:54:40.053Z",
+        "delivery_note_id": "8ea44ee2-9745-4d1e-9188-f4cf4f15ce22"
+      },
+      {
+        "id": "14dd9b5c-eca0-45ea-b547-d37310ce0d9f",
+        "file_name": "data_file_3.xlsx",
+        "imported_at": "2023-09-06T00:40:21.918Z",
+        "item_limit": 58128,
+        "created_at": "2023-09-06T10:18:21.530Z",
+        "updated_at": "2023-09-05T18:09:54.315Z",
+        "delivery_note_id": "15777a86-15f0-464b-9d43-45cc1930d820"
+      },
+      {
+        "id": "ed8e0bb9-9c04-463a-975b-1e9dc28e88b6",
+        "file_name": "data_file_4.xlsx",
+        "imported_at": "2023-09-05T18:31:50.973Z",
+        "item_limit": 47245,
+        "created_at": "2023-09-05T22:50:07.068Z",
+        "updated_at": "2023-09-06T15:03:40.734Z",
+        "delivery_note_id": "4cee8617-fdcd-4d64-8071-62400c8d56bb"
+      },
+      {
+        "id": "8f0b91ef-58b7-451e-bf29-2a3290da2525",
+        "file_name": "data_file_5.xlsx",
+        "imported_at": "2023-09-06T00:54:00.854Z",
+        "item_limit": 27920,
+        "created_at": "2023-09-06T04:39:59.052Z",
+        "updated_at": "2023-09-06T14:10:04.337Z",
+        "delivery_note_id": "4a8abd45-d1e0-4dba-82b1-2cd3970ee536"
+      }
+    ],
+    "delivery_item": [
+      {
+        "id": "61bd0526-cbef-40d4-bda9-12c4dcfaf416",
+        "name": "Product A",
+        "quantity": 264,
+        "price": 39925,
+        "weight": 11650,
+        "deadline": "2023-09-05T18:14:25.464Z",
+        "created_at": "2023-09-05T19:20:58.938Z",
+        "updated_at": "2023-09-06T10:38:48.921Z",
+        "delivery_note_id": "8ea44ee2-9745-4d1e-9188-f4cf4f15ce22"
+      },
+      {
+        "id": "8429dcbc-2a76-47e6-a8cf-a50979bad760",
+        "name": "Product B",
+        "quantity": 82029,
+        "price": 52914,
+        "weight": 4466,
+        "deadline": "2023-09-06T12:27:59.937Z",
+        "created_at": "2023-09-05T23:36:58.241Z",
+        "updated_at": "2023-09-06T00:15:01.218Z",
+        "delivery_note_id": "f088381f-0c54-4af3-bb39-f0ae861db291"
+      },
+      {
+        "id": "3fc9f415-b099-4232-91c5-0213b631d081",
+        "name": "Product C",
+        "quantity": 14715,
+        "price": 60181,
+        "weight": 66149,
+        "deadline": "2023-09-06T14:06:45.963Z",
+        "created_at": "2023-09-06T03:41:30.224Z",
+        "updated_at": "2023-09-05T22:16:08.883Z",
+        "delivery_note_id": "8ea44ee2-9745-4d1e-9188-f4cf4f15ce22"
+      },
+      {
+        "id": "57f640db-fe79-47c7-9b9d-16c2434030bf",
+        "name": "Product D",
+        "quantity": 86680,
+        "price": 51240,
+        "weight": 81533,
+        "deadline": "2023-09-06T03:19:57.014Z",
+        "created_at": "2023-09-06T15:36:41.398Z",
+        "updated_at": "2023-09-06T15:10:27.760Z",
+        "delivery_note_id": "f088381f-0c54-4af3-bb39-f0ae861db291"
+      },
+      {
+        "id": "9610ff96-e00d-46b6-9177-b1e6a4aa4a55",
+        "name": "Product E",
+        "quantity": 72249,
+        "price": 24326,
+        "weight": 80334,
+        "deadline": "2023-09-06T03:53:24.596Z",
+        "created_at": "2023-09-06T00:39:04.672Z",
+        "updated_at": "2023-09-06T05:07:24.471Z",
+        "delivery_note_id": "f088381f-0c54-4af3-bb39-f0ae861db291"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "2230f210-80a8-4ccd-970e-88062dc8c387",
+        "email": "Robb_Sanford@gmail.com",
+        "firstName": "Alba",
+        "lastName": "O'Hara",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/360.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "97aca670-51a6-4014-8033-09ddf937defe",
+        "email": "Una71@gmail.com",
+        "firstName": "Andreane",
+        "lastName": "Tremblay",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/47.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6bce0ca2-f5b8-44c6-b284-2574e5355a90",
+        "email": "Savanna_Buckridge17@gmail.com",
+        "firstName": "Kaylie",
+        "lastName": "Hessel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96810372",
+        "tenantId": null
+      },
+      {
+        "reference": "311c115f-4339-495a-8c1e-3127db9ed7bd",
+        "email": "Karina.Schiller56@yahoo.com",
+        "firstName": "Daija",
+        "lastName": "Hansen-Douglas",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/769.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "939184cb-e633-4d2b-9c7c-f9ee13ef39ab",
+        "email": "Jose.Shanahan41@gmail.com",
+        "firstName": "Audie",
+        "lastName": "Cronin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59152573",
+        "tenantId": null
+      }
+    ]
+  }
+]
